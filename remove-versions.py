@@ -9,7 +9,6 @@ try:
 
   with open('requirements.txt', 'w') as myFile:
     myFile.write(file_contents)
-    print('Successfully generated the new requirements.txt file')
 
 except FileNotFoundError:
   print(
