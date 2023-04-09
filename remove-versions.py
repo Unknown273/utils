@@ -5,7 +5,7 @@ try:
     pkgs = pkgs.splitlines()
 
   for pkg in pkgs:
-      file_contents += pkg.split('==')[0] + '\n'
+      file_contents += pkg.split('==')[0].split('>=')[0] + '\n'
 
   with open('requirements.txt', 'w') as myFile:
     myFile.write(file_contents)
